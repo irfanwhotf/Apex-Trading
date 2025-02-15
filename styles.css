@@ -2139,3 +2139,136 @@ section {
 .admin-discord-link i {
     font-size: 1.2em;
 }
+
+/* Axiom Pro Section Styles */
+.axiom-section {
+    background: linear-gradient(135deg, rgba(13, 17, 23, 0.95) 0%, rgba(23, 27, 33, 0.95) 100%);
+    padding: 4rem 0;
+    color: white;
+}
+
+.axiom-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.axiom-content {
+    text-align: center;
+}
+
+.axiom-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(135deg, #8B5CF6, #6366F1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+}
+
+.axiom-message {
+    font-size: 1.2rem;
+    color: #A5B4FC;
+    margin-bottom: 3rem;
+}
+
+.axiom-benefits {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.benefit-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+}
+
+.benefit-card i {
+    font-size: 2rem;
+    color: #8B5CF6;
+    margin-bottom: 1rem;
+}
+
+.benefit-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.benefit-card p {
+    color: #A5B4FC;
+    font-size: 0.9rem;
+}
+
+.referral-box {
+    background: rgba(139, 92, 246, 0.1);
+    border: 2px solid rgba(139, 92, 246, 0.3);
+    padding: 2rem;
+    border-radius: 12px;
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+.referral-box p {
+    color: #A5B4FC;
+    margin-bottom: 1rem;
+}
+
+.code-display {
+    background: rgba(139, 92, 246, 0.2);
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #8B5CF6;
+    margin: 1rem 0;
+    display: inline-block;
+}
+
+.referral-note {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+.axiom-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: linear-gradient(135deg, #8B5CF6, #6366F1);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.3s ease;
+}
+
+.axiom-cta:hover {
+    transform: translateY(-2px);
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+    .axiom-content h2 {
+        font-size: 2.2rem;
+    }
+
+    .axiom-benefits {
+        grid-template-columns: 1fr;
+    }
+
+    .benefit-card {
+        padding: 1.5rem;
+    }
+
+    .axiom-message {
+        font-size: 1.1rem;
+    }
+}
