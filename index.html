@@ -3,23 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="description" content="Join Apex Trading - Your gateway to professional trading. Get exclusive signals, expert insights, and join our winning community of traders.">
-    <meta name="keywords" content="Apex Trading, trading signals, crypto trading, Axiom Pro, trading community, professional trading">
-    <meta name="author" content="Apex Trading">
-    <meta property="og:title" content="Apex Trading - Professional Trading Community">
-    <meta property="og:description" content="Join our elite trading community. Get exclusive signals and expert insights to elevate your trading game.">
+    <meta name="description" content="Join our friendly memecoin community. Get expert guidance, supportive community, and beginner-friendly learning.">
+    <meta name="keywords" content="Memecoin Community, memecoin trading, beginner-friendly, supportive community, expert guidance">
+    <meta name="author" content="Memecoin Community">
+    <meta property="og:title" content="Memecoin Community - Your Gateway to Memecoin Trading">
+    <meta property="og:description" content="Join our friendly community of memecoin enthusiasts. Whether you're a beginner or experienced trader, we're here to help you navigate the exciting world of memecoins with expert guidance and support.">
     <meta property="og:image" content="assets/logo.png">
     <meta property="og:url" content="https://apextrader.vercel.app">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="theme-color" content="#8B5CF6">
     
-    <title>Apex Trading - Professional Trading Community</title>
+    <title>Memecoin Community - Your Gateway to Memecoin Trading</title>
     <link rel="icon" type="image/png" href="assets/logo.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        /* Custom Cursor Styles */
+        * {
+            cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path fill="%237c3aed" d="M4.5.79v22.42l6.56-6.57h9.29L4.5.79z"></path></svg>') 0 0, auto;
+        }
+
+        /* Interactive elements cursor */
+        a, button, .feature-card {
+            cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path fill="%239f67ff" d="M4.5.79v22.42l6.56-6.57h9.29L4.5.79z"></path></svg>') 0 0, pointer;
+        }
+
+        /* Remove previous cursor styles */
+        .custom-cursor, .custom-cursor-follower {
+            display: none;
+        }
+
+        /* Mobile optimization */
+        @media (max-width: 768px) {
+            * {
+                cursor: auto;
+            }
+            a, button, .feature-card {
+                cursor: pointer;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Loading Bar -->
@@ -30,14 +56,14 @@
         <div class="header-container">
             <div class="brand">
                 <a href="#" class="logo-link">
-                    <img src="assets/logo.png" alt="Apex Trading" class="logo-image">
+                    <img src="assets/logo.png" alt="Memecoin Community" class="logo-image">
                 </a>
             </div>
             <nav class="main-nav">
                 <ul>
                     <li><a href="#hero-section">Home</a></li>
-                    <li><a href="#services">About</a></li>
-                    <li><a href="#profit-showcase">Recent Wins</a></li>
+                    <li><a href="#admin">Meet Our Admin</a></li>
+                    <li><a href="#services">What We Offer</a></li>
                     <li><a href="#testimonials">Testimonials</a></li>
                     <li><a href="https://discord.com/invite/aeC3SDMS" target="_blank" class="nav-cta">Join Discord</a></li>
                 </ul>
@@ -46,30 +72,26 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero-section" id="home">
+    <section id="hero-section" class="hero-section">
         <div class="hero-content">
-            <h1 class="hero-title">Trading Journey?</h1>
-            <p class="hero-subtitle">Join thousands of successful traders who are already profiting from our signals</p>
-            
-            <div class="features-container">
+            <h2>Welcome to Apex Trading Community</h2>
+            <p class="hero-subtitle">Join our friendly community of memecoin enthusiasts. Whether you're a beginner or experienced trader, we're here to help you navigate the exciting world of memecoins with expert guidance and support.</p>
+            <div class="feature-points">
                 <div class="feature-item">
-                    <i class="fas fa-chart-line feature-icon"></i>
-                    <h3 class="feature-name">Premium Signals</h3>
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Beginner-Friendly Learning</span>
                 </div>
-                
                 <div class="feature-item">
-                    <i class="fas fa-users feature-icon"></i>
-                    <h3 class="feature-name">Expert Community</h3>
+                    <i class="fas fa-users"></i>
+                    <span>Supportive Community</span>
                 </div>
-                
                 <div class="feature-item">
-                    <i class="fas fa-bolt feature-icon"></i>
-                    <h3 class="feature-name">Fast Support</h3>
+                    <i class="fas fa-hands-helping"></i>
+                    <span>Expert Guidance</span>
                 </div>
             </div>
-            
-            <div class="hero-cta">
-                <a href="https://discord.com/invite/aeC3SDMS" target="_blank" class="discord-button">
+            <div class="cta-buttons">
+                <a href="https://discord.com/invite/aeC3SDMS" target="_blank" class="cta-button primary">
                     <i class="fab fa-discord"></i>
                     Join Our Discord
                 </a>
@@ -77,59 +99,39 @@
         </div>
     </section>
 
+    <!-- Meet Our Admin Section -->
+    <section id="admin" class="admin-section">
+        <div class="container">
+            <h2 class="reveal">Meet Our Admin</h2>
+            <div class="admin-card reveal">
+                <div class="admin-profile">
+                    <img src="assets/admin.png" alt="Admin ap31" class="admin-avatar">
+                    <div class="admin-info">
+                        <h3>ap31</h3>
+                        <p class="admin-title">Community Leader & Memecoin Expert</p>
+                        <p class="admin-description">With a passion for helping newcomers succeed in the memecoin space, ap31 brings years of trading experience and a commitment to building a supportive, educational community. Known for providing clear, actionable guidance and fostering a welcoming environment for traders of all levels.</p>
+                        <a href="https://discord.com/users/ap31" target="_blank" class="admin-discord-link">
+                            <i class="fab fa-discord"></i> Connect on Discord
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Services Section -->
     <section id="services" class="services-section">
         <div class="container">
-            <h2 class="reveal">Our Services</h2>
+            <h2 class="reveal">What We Offer</h2>
             <div class="services-grid">
                 <div class="service-card reveal">
                     <div class="service-icon">
                         <div class="icon-circle">
-                            <i class="fas fa-clock fa-2x"></i>
+                            <i class="fas fa-chalkboard-teacher fa-2x"></i>
                         </div>
                     </div>
-                    <h3>24/7 Alpha Calls</h3>
-                    <p>Gain 24/7 access to top trading signals. Our callers and community constantly identify new opportunities, ensuring you stay ahead in the market.</p>
-                </div>
-
-                <div class="service-card reveal">
-                    <div class="service-icon">
-                        <div class="icon-circle">
-                            <i class="fas fa-chart-line fa-2x"></i>
-                        </div>
-                    </div>
-                    <h3>Pumpfun Monitors</h3>
-                    <p>Stay ahead with our Pumpfun Monitors. We track insider buys from fresh wallets, allowing you to spot projects before they blow up.</p>
-                </div>
-
-                <div class="service-card reveal">
-                    <div class="service-icon">
-                        <div class="icon-circle">
-                            <i class="fab fa-telegram fa-2x"></i>
-                        </div>
-                    </div>
-                    <h3>Telegram Mirrors</h3>
-                    <p>Access the best Telegram groups in one place. No need for multiple subscriptions – we've got it all covered.</p>
-                </div>
-
-                <div class="service-card reveal">
-                    <div class="service-icon">
-                        <div class="icon-circle">
-                            <i class="fas fa-wallet fa-2x"></i>
-                        </div>
-                    </div>
-                    <h3>Wallet Trackers</h3>
-                    <p>Follow the trades of profitable memecoin traders with our Wallet Trackers. Easily track or set up a copy trading bot to mirror their moves.</p>
-                </div>
-
-                <div class="service-card reveal">
-                    <div class="service-icon">
-                        <div class="icon-circle">
-                            <i class="fab fa-twitter fa-2x"></i>
-                        </div>
-                    </div>
-                    <h3>Twitter Trackers</h3>
-                    <p>Only the best memecoin twitter accounts with our Twitter Trackers. From hidden gems to big ones, we ensure you stay informed.</p>
+                    <h3>Beginner Guidance</h3>
+                    <p>New to memecoins? Our community provides step-by-step guidance to help you start your trading journey safely and confidently.</p>
                 </div>
 
                 <div class="service-card reveal">
@@ -138,8 +140,28 @@
                             <i class="fas fa-users fa-2x"></i>
                         </div>
                     </div>
-                    <h3>Community Access</h3>
-                    <p>Join our amazing solana memecoins community where we help each other grow, learn, and succeed. We support one another & share insights.</p>
+                    <h3>Community Support</h3>
+                    <p>Join a friendly community where members help each other grow, learn, and succeed in memecoin trading.</p>
+                </div>
+
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <div class="icon-circle">
+                            <i class="fas fa-book fa-2x"></i>
+                        </div>
+                    </div>
+                    <h3>Educational Resources</h3>
+                    <p>Access our curated collection of trading guides, risk management strategies, and market analysis tools.</p>
+                </div>
+
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <div class="icon-circle">
+                            <i class="fas fa-comments fa-2x"></i>
+                        </div>
+                    </div>
+                    <h3>Active Discussions</h3>
+                    <p>Engage in meaningful discussions about market trends, trading strategies, and potential opportunities.</p>
                 </div>
             </div>
         </div>
@@ -151,100 +173,22 @@
             <div class="testimonial-card">
                 <img src="https://cdn.discordapp.com/embed/avatars/1.png" alt="User Avatar" class="testimonial-avatar">
                 <div class="testimonial-content">
-                    <p class="testimonial-text">"The signals here are incredible. Made my first 100x thanks to Apex! Their entry and exit calls are always on point."</p>
+                    <p class="testimonial-text">"The community here is incredible. I've learned so much from the members and admin, and I feel confident in my trading decisions."</p>
                     <p class="testimonial-author">CryptoWhale92</p>
                 </div>
             </div>
             <div class="testimonial-card">
                 <img src="https://cdn.discordapp.com/embed/avatars/2.png" alt="User Avatar" class="testimonial-avatar">
                 <div class="testimonial-content">
-                    <p class="testimonial-text">"Best community for learning memecoin trading strategies. The team's analysis is always detailed and accurate."</p>
+                    <p class="testimonial-text">"I was new to memecoins, but the community support and guidance helped me get started quickly and safely."</p>
                     <p class="testimonial-author">MoonHunter</p>
                 </div>
             </div>
             <div class="testimonial-card">
                 <img src="https://cdn.discordapp.com/embed/avatars/3.png" alt="User Avatar" class="testimonial-avatar">
                 <div class="testimonial-content">
-                    <p class="testimonial-text">"Been here for 3 months and already 10x'd my portfolio. The community is super helpful and the calls are pure gold!"</p>
+                    <p class="testimonial-text">"The educational resources and active discussions have helped me improve my trading skills and stay up-to-date with market trends."</p>
                     <p class="testimonial-author">SolanaKing</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Recent Wins Section -->
-    <section id="profit-showcase" class="profit-showcase">
-        <h2>Our Recent Wins 🚀</h2>
-        <div class="showcase-container">
-            <button class="nav-button prev-button">
-                <i class="fas fa-chevron-left"></i>
-            </button>
-            <div class="showcase-track">
-                <div class="showcase-slide">
-                    <img src="profits/1.jpg" alt="Trading Win 1" class="win-image">
-                    <div class="win-details">
-                        <span class="profit-amount">+95.82%</span>
-                        <span class="trade-platform">Axiom Pro</span>
-                    </div>
-                </div>
-                <div class="showcase-slide">
-                    <img src="profits/2.jpg" alt="Trading Win 2" class="win-image">
-                    <div class="win-details">
-                        <span class="profit-amount">+236.51%</span>
-                        <span class="trade-platform">Axiom Pro</span>
-                    </div>
-                </div>
-                <div class="showcase-slide">
-                    <img src="profits/3.png" alt="Trading Win 3" class="win-image">
-                    <div class="win-details">
-                        <span class="profit-amount">+64.54%</span>
-                        <span class="trade-platform">Axiom Pro</span>
-                    </div>
-                </div>
-                <div class="showcase-slide">
-                    <img src="profits/4.png" alt="Trading Win 4" class="win-image">
-                    <div class="win-details">
-                        <span class="profit-amount">+72.28%</span>
-                        <span class="trade-platform">Axiom Pro</span>
-                    </div>
-                </div>
-            </div>
-            <button class="nav-button next-button">
-                <i class="fas fa-chevron-right"></i>
-            </button>
-        </div>
-    </section>
-
-    <section class="axiom-section" id="trade">
-        <div class="axiom-container">
-            <div class="axiom-content">
-                <h2>Level Up Your Trading Game</h2>
-                <div class="axiom-benefits">
-                    <div class="benefit-card">
-                        <i class="fas fa-bolt"></i>
-                        <h3>Lightning Fast</h3>
-                        <p>Trade with zero lag and instant order execution</p>
-                    </div>
-                    <div class="benefit-card">
-                        <i class="fas fa-shield-alt"></i>
-                        <h3>Secure & Reliable</h3>
-                        <p>Your funds, your control - trade with confidence</p>
-                    </div>
-                    <div class="benefit-card">
-                        <i class="fas fa-chart-line"></i>
-                        <h3>Pro Tools</h3>
-                        <p>Get access to advanced charts and pro indicators</p>
-                    </div>
-                </div>
-                <div class="axiom-cta">
-                    <p class="axiom-message">Want to join our winning traders? Create your Axiom Pro account through our community link and get exclusive access to our trading insights!</p>
-                    <a href="https://axiom.trade/@apex01" target="_blank" class="axiom-button">
-                        <span class="button-content">
-                            <i class="fas fa-rocket"></i>
-                            Start Trading Now
-                        </span>
-                    </a>
-                    <p class="axiom-note">Join through our link to get direct access to our trading signals and community support</p>
                 </div>
             </div>
         </div>
@@ -254,21 +198,18 @@
     <section class="join-community">
         <div class="join-container">
             <div class="join-content">
-                <h2 class="glow-text">Join thousands of successful traders</h2>
-                <p class="join-subtitle">Be part of an elite community that consistently spots the next big opportunities</p>
+                <h2 class="glow-text">Join Our Friendly Community</h2>
+                <p class="join-subtitle">Be part of a supportive community that helps you navigate the exciting world of memecoins.</p>
                 <div class="join-stats">
                     <div class="stat-item">
-                        <span class="stat-number">5000+</span>
-                        <span class="stat-label">Active Traders</span>
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Active Members</span>
                     </div>
                     <div class="stat-item">
                         <span class="stat-number">24/7</span>
                         <span class="stat-label">Live Support</span>
                     </div>
-                    <div class="stat-item">
-                        <span class="stat-number">100+</span>
-                        <span class="stat-label">Daily Signals</span>
-                    </div>
+                    
                 </div>
                 <a href="https://discord.com/invite/aeC3SDMS" target="_blank" class="join-button">
                     <span class="button-content">
@@ -285,20 +226,20 @@
     <section class="cta-section">
         <div class="cta-container">
             <div class="cta-content">
-                <h2 class="cta-title">Ready to Start Your Trading Journey?</h2>
-                <p class="cta-description">Join thousands of successful traders who are already profiting from our signals</p>
+                <h2 class="cta-title">Ready to Join Our Community?</h2>
+                <p class="cta-description">Join thousands of memecoin enthusiasts who are already part of our supportive community.</p>
                 <div class="cta-features">
                     <div class="cta-feature">
-                        <i class="fas fa-chart-line"></i>
-                        <span>Premium Signals</span>
-                    </div>
-                    <div class="cta-feature">
                         <i class="fas fa-users"></i>
-                        <span>Expert Community</span>
+                        <span>Supportive Community</span>
                     </div>
                     <div class="cta-feature">
-                        <i class="fas fa-rocket"></i>
-                        <span>Fast Support</span>
+                        <i class="fas fa-hands-helping"></i>
+                        <span>Expert Guidance</span>
+                    </div>
+                    <div class="cta-feature">
+                        <i class="fas fa-book"></i>
+                        <span>Educational Resources</span>
                     </div>
                 </div>
                 <a href="https://discord.com/invite/aeC3SDMS" target="_blank" class="cta-discord-button">
@@ -312,20 +253,121 @@
         </div>
     </section>
 
+    <style>
+    .cta-section {
+        padding: 2rem 1rem;
+    }
+    
+    .cta-container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .cta-content {
+        text-align: center;
+    }
+    
+    .cta-title {
+        font-size: clamp(1.5rem, 4vw, 2.5rem);
+        margin-bottom: 1rem;
+    }
+    
+    .cta-description {
+        font-size: clamp(1rem, 3vw, 1.2rem);
+        margin-bottom: 2rem;
+    }
+    
+    .cta-features {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    
+    .cta-feature {
+        flex: 1;
+        min-width: 200px;
+        max-width: 300px;
+        padding: 1.5rem;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 12px;
+        backdrop-filter: blur(10px);
+        transition: transform 0.3s ease;
+    }
+    
+    .cta-feature:hover {
+        transform: translateY(-5px);
+    }
+    
+    .cta-feature i {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+        display: block;
+    }
+    
+    .cta-discord-button {
+        display: inline-flex;
+        align-items: center;
+        padding: 0.8rem 2rem;
+        border-radius: 50px;
+        background: linear-gradient(45deg, #7289da, #5865F2);
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        position: relative;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+        max-width: 100%;
+        width: fit-content;
+        margin: 0 auto;
+    }
+    
+    .button-content {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        z-index: 1;
+    }
+    
+    @media (max-width: 768px) {
+        .cta-feature {
+            min-width: 150px;
+            padding: 1rem;
+        }
+        
+        .cta-features {
+            gap: 1rem;
+        }
+        
+        .cta-discord-button {
+            padding: 0.7rem 1.5rem;
+            font-size: 0.9rem;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .cta-feature {
+            flex: 1 1 100%;
+            max-width: 100%;
+        }
+    }
+    </style>
+
     <!-- Footer -->
     <footer class="main-footer">
         <div class="footer-content">
             <div class="footer-grid">
                 <div class="footer-column">
                     <h3>About Us</h3>
-                    <p>Leading the way in memecoin trading signals and community-driven success.</p>
+                    <p>Leading the way in memecoin community building and education.</p>
                 </div>
                 <div class="footer-column">
                     <h3>Quick Links</h3>
                     <ul class="footer-links">
                         <li><a href="#hero-section">Home</a></li>
-                        <li><a href="#services">About</a></li>
-                        <li><a href="#profit-showcase">Recent Wins</a></li>
+                        <li><a href="#admin">Meet Our Admin</a></li>
+                        <li><a href="#services">What We Offer</a></li>
                         <li><a href="#testimonials">Testimonials</a></li>
                     </ul>
                 </div>
