@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Apex Trading
 
 Professional trading community website built with modern web technologies. Join our community to get exclusive trading signals and expert insights.
@@ -41,3 +42,6 @@ This site is deployed on Vercel. Visit [apextrader.vercel.app](https://apextrade
 ## License
 
 MIT License - feel free to use this code for your own projects
+=======
+# Apex-Trading
+>>>>>>> d1b6f775bf7dcdb9f35f0d5056387a3ddcabee6d
